@@ -1,0 +1,96 @@
+:root {
+    --background-color: #FAE6B4;
+    --font-color: black;
+    --font:  Helvetica;
+    --ingredients: rgba(108, 206, 22, 0.199);
+    --bttn-color: goldenrod;
+    --bttn-bcgr: black;
+
+}
+
+html {
+    box-sizing: border-box;
+    
+}
+
+*, ::before, ::after {
+ box-sizing: inherit;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-color);
+    color: var(--font-color);
+    font-family: var(--font);
+    overflow-x: hidden;
+    
+
+}
+
+#title {
+  
+  text-align: center;
+  
+}
+
+
+.grid, .steps {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    max-width: 720px;
+    margin: 20px auto;
+   
+}
+
+.ingred {
+    width: 60%;
+    height: fit-content;
+    background-color: var(--ingredients);
+    border-radius: 10px;
+    margin: 20px auto 20px 50px;
+    padding: 0.5rem;
+    
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+
+
+.homebttn {
+    display: flex;
+    
+    flex-wrap: nowrap;
+    flex-direction: row;
+    place-items: center;
+
+    width: 100px;
+    height: 1.1rem;
+    color: var(--bttn-color);
+    background-color: var(--bttn-color);
+    padding: 1em;
+    font-size: 0.6em;    
+    margin: 5px 0 5px 20px;
+    
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+
+} 
+
+nav p {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+}
+
+
